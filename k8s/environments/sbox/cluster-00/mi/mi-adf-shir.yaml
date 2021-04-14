@@ -12,7 +12,7 @@ spec:
   chart:
     git: git@github.com:hmcts/shared-services-flux
     path: k8s/release/mi/mi-adf-shir
-    ref: setup-sbox-shir-charts
+    ref: test-shir-charts-hardcoded-auth
   values:
     labels:
       app.kubernetes.io/instance: mi-adf-shir-deployment
