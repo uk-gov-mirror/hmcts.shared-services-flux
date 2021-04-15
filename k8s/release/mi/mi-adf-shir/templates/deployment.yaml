@@ -40,7 +40,7 @@ spec:
               mountPath: {{ .Values.secretsMountPath }}
               readOnly: true
       nodeSelector:
-        kubernetes.io/os: windows
+        name: msnode
       tolerations:
         - key: "kubernetes.io/os"
           operator: "Equal"
