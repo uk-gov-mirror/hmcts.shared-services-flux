@@ -29,8 +29,6 @@ spec:
           env:
             - name: SECRETS_MOUNT_PATH
               value: '{{ .Values.secretsMountPath }}'
-            - name: SECRETS_AUTH_KEY_NAME
-              value: "{{ .Values.secretsAuthKeyName }}"
             - name: ENABLE_HA
               value: "{{ .Values.haEnabled }}"
             - name: NODE_NAME

@@ -17,7 +17,6 @@ keyVaultSecrets:
   - mi-adf-auth-key
 
 secretsMountPath: 'C:\kvmnt'
-secretsAuthKeyName: "mi-adf-auth-key"
 
 haEnabled: "true"
 haPort: "8060"
