@@ -12,12 +12,12 @@ spec:
   chart:
     git: git@github.com:hmcts/shared-services-flux
     path: k8s/release/mi/mi-adf-shir
-    ref: setup-sbox-shir-charts
+    ref: mi-adf-shir-vaultless-deploy
   values:
     labels:
       app.kubernetes.io/instance: mi-adf-shir-deployment
       app.kubernetes.io/name: mi-adf-shir-deployment
-    image: sdshmctspublic.azurecr.io/mi/adf-integration-runtime:dev-81ee00c
+    image: sdshmctspublic.azurecr.io/mi/adf-integration-runtime:dev-62788f0
     environment: "sbox"
     resourcegroup: "mi-sbox-rg"
     subscriptionId: "a8140a9e-f1b0-481f-a4de-09e2ee23f7ab"

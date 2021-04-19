@@ -16,29 +16,18 @@ spec:
         app: {{ .Values.appName }}
         aadpodidbinding: {{ .Values.aadIdentityName }}
     spec:
-      volumes:
-        - name: {{ .Values.keyVaultName }}-secrets-store
-          csi:
-            driver: secrets-store.csi.k8s.io
-            readOnly: true
-            volumeAttributes:
-              secretProviderClass: {{ .Values.appName }}-secret-provider
       containers:
         - name: mi-adf-shir
           image: {{ .Values.image }}
           env:
-            - name: SECRETS_MOUNT_PATH
-              value: '{{ .Values.secretsMountPath }}'
+            - name: AUTH_KEY
+              value: "IR@019866c9-470a-41a3-a74d-54c6827096f3@mi-ingestion-adf-sbox@ServiceEndpoint=mi-ingestion-adf-sbox.uksouth.datafactory.azure.net@nBRcR7gpHzbx5L29tcq2Rmgml++/R4UQyKduUXvb1zY="
             - name: ENABLE_HA
               value: "{{ .Values.haEnabled }}"
             - name: NODE_NAME
               value: "{{ .Values.appName }}"
             - name: HA_PORT
               value: "{{ .Values.haPort }}"
-          volumeMounts:
-            - name: {{ .Values.keyVaultName }}-secrets-store
-              mountPath: {{ .Values.secretsMountPath }}
-              readOnly: true
       nodeSelector:
         kubernetes.io/os: windows
       tolerations:
