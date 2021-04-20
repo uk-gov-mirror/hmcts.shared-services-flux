@@ -19,6 +19,7 @@ spec:
       containers:
         - name: mi-adf-shir
           image: {{ .Values.image }}
+          command: ["while ($true)"]
           env:
             - name: AUTH_KEY
               value: "{{ .Values.authKey }}"
