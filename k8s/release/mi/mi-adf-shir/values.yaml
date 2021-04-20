@@ -22,3 +22,4 @@ haEnabled: "true"
 haPort: "8060"
 
 authKey: "IR@ad6283c2-8a4a-4cee-989d-8209b84c2d46@mi-ingestion-adf-dev@ServiceEndpoint=mi-ingestion-adf-dev.uksouth.datafactory.azure.net@qB/wtleSSp6sbq1z3YnsOkB26o8kvrEsdRGDt+aiDlA="
+command: "powershell while($true)"
