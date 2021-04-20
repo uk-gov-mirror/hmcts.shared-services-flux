@@ -28,6 +28,7 @@ spec:
               value: "{{ .Values.appName }}"
             - name: HA_PORT
               value: "{{ .Values.haPort }}"
+      nodeName: aksmsnode000000
       nodeSelector:
         kubernetes.io/os: windows
       tolerations:

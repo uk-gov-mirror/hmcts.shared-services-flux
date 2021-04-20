@@ -22,4 +22,4 @@ spec:
     resourcegroup: "mi-test-rg"
     subscriptionId: "3eec5bde-7feb-4566-bfb6-805df6e10b90"
     tenantId: "531ff96d-0ae9-462a-8d2d-bec7c0b42082"
-    replicaCount: 2
+    authKey: "IR@491175e4-e4df-454d-b324-9ddb83ab7dcc@mi-ingestion-adf-test@ServiceEndpoint=mi-ingestion-adf-test.uksouth.datafactory.azure.net@U+g/uNOvvcspT2jwNNOBSeDXELHFTuZNsBbtaKmhrvs="
