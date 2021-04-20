@@ -19,7 +19,6 @@ spec:
       containers:
         - name: mi-adf-shir
           image: {{ .Values.image }}
-          command: [{{ .Values.command }}]
           env:
             - name: AUTH_KEY
               value: "{{ .Values.authKey }}"

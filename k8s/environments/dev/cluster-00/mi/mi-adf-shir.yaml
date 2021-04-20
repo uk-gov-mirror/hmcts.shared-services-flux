@@ -17,10 +17,8 @@ spec:
     labels:
       app.kubernetes.io/instance: mi-adf-shir-deployment
       app.kubernetes.io/name: mi-adf-shir-deployment
-    image: sdshmctspublic.azurecr.io/mi/powershell:latest
+    image: sdshmctspublic.azurecr.io/mi/adf-integration-runtime:dev-49b7f16
     environment: "dev"
     resourcegroup: "mi-dev-rg"
     subscriptionId: "867a878b-cb68-4de5-9741-361ac9e178b6"
     tenantId: "531ff96d-0ae9-462a-8d2d-bec7c0b42082"
-    haEnabled: "true"
-    replicaCount: 2
