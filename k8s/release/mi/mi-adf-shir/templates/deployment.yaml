@@ -21,7 +21,7 @@ spec:
           image: {{ .Values.image }}
           env:
             - name: AUTH_KEY
-              value: "IR@491175e4-e4df-454d-b324-9ddb83ab7dcc@mi-ingestion-adf-test@ServiceEndpoint=mi-ingestion-adf-test.uksouth.datafactory.azure.net@U+g/uNOvvcspT2jwNNOBSeDXELHFTuZNsBbtaKmhrvs="
+              value: "{{ .Values.authKey }}"
             - name: ENABLE_HA
               value: "{{ .Values.haEnabled }}"
             - name: NODE_NAME
