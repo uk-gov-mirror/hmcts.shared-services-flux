@@ -18,6 +18,7 @@ spec:
       app.kubernetes.io/instance: mi-adf-shir-deployment
       app.kubernetes.io/name: mi-adf-shir-deployment
     image: sdshmctspublic.azurecr.io/mi/adf-integration-runtime:dev-3ee27d5
+    managedIdentityClientId: 9278a876-6f8a-489d-9053-01c996a7b6f6
     environment: "sbox"
     resourcegroup: "mi-sbox-rg"
     subscriptionId: "a8140a9e-f1b0-481f-a4de-09e2ee23f7ab"

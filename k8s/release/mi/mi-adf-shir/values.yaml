@@ -11,6 +11,7 @@ appName: mi-adf-shir
 namespace: mi
 
 aadIdentityName: mi-integration-service
+managedIdentityClientId: 9278a876-6f8a-489d-9053-01c996a7b6f6
 
 keyVaultName: mi-vault
 keyVaultSecrets:
