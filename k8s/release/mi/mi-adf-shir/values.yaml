@@ -10,7 +10,11 @@ replicaCount: 2
 appName: mi-adf-shir
 namespace: mi
 
+# Use only one of the two below. Currently Windows does not support podIdentity so using MI
+usePodIdentity: false
 aadIdentityName: mi-integration-service
+
+useVMManagedIdentity: true
 managedIdentityClientId: 9278a876-6f8a-489d-9053-01c996a7b6f6
 
 keyVaultName: mi-vault
